@@ -1,0 +1,72 @@
+/*This stylesheet contains the layout rules for GrecoClips.com*/
+
+
+/*Desktop/Laptop Styles*/
+@media screen and (min-width: 600px){
+   
+    body {    
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #logo {
+        width: 85%;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+    }
+    
+    nav.pageNav ul {
+        display: flex;
+        width: 100%;
+    }
+    
+    nav.pageNav li {
+        height: 3.0em;
+        flex: 1 0 25%;
+        display: block;
+        text-align: center;
+    }
+
+    nav.pageNav a {
+        margin: auto auto;
+        display: block;
+        padding: 16px 10px;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+}
+
+
+/*Tablet/Phone Styles*/
+@media screen and (max-width: 599px){
+    
+    body {
+        width: 97%;
+        margin: 0 auto;
+        padding: 8px;
+    }
+    
+
+    #logo {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    nav.pageNav li {
+        height: 2em;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        border-radius: 15px;
+    }
+
+    nav.pageNav a {
+        height: 100%;
+        padding-top: 2%;
+        margin: auto auto;
+        display: block;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+}

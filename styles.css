@@ -1,0 +1,62 @@
+/*This stylesheet contains the style rules for GrecoClips.com*/
+
+/*Font Styles*/
+@font-face {
+    font-family: grecoClips;
+    src: url("Comfortaa-VariableFont_wght.ttf") format("truetype");
+  }
+/*HTML, Body, Header*/
+html {
+    background-image: url("background_clippers.jpg");
+    background-repeat: repeat;
+}
+
+body {
+    font-family: grecoClips, sans-serif;
+    background-color: #d9d9d9;
+    color: #000000;
+    box-shadow: -3px 0 5px black, 3px 0 5px black;
+}
+
+header {
+    width: 100%;
+}
+
+
+/*Navigation*/
+nav.pageNav li {
+    flex: 1 0 25%;
+    display: block;
+    text-align: center;
+    background-image: linear-gradient(to right, #010007, #2400f0, hsl(233, 100%, 5%));
+}
+
+nav.pageNav li:hover, nav.pageNav li:active {
+    flex: 1 0 25%;
+    display: block;
+    text-align: center;
+    background-image: linear-gradient(to right, #010007, #d60000, hsl(233, 100%, 5%));
+}
+
+nav.pageNav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav.pageNav a:hover, nav.pageNav a:active{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*Main*/
+
+h1 {
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+
+/*Aside*/
+
+
+/*Footer*/
