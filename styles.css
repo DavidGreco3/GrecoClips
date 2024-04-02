@@ -87,6 +87,22 @@ section#meetHunky img {
     border: 5px outset rgb(49, 49, 49);
 }
 
+section#services {
+    background-color: rgb(49, 49, 49);
+    color: white;
+}
+
+div.service section.serviceGallery {
+    background-image: linear-gradient(to right, #010007, #2400f0, hsl(233, 100%, 5%));
+    transition: background-image 5s ease-in-out;
+}
+
+div.service section.serviceGallery:hover {
+    background-image: linear-gradient(to right, #010007, #d60000, hsl(233, 100%, 5%));
+
+}
+
+
 /*Aside*/
 
 aside#photoGallery {

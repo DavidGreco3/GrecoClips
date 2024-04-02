@@ -151,6 +151,50 @@
         padding-top: 2%;
         padding-bottom: 2%;
     }
+
+    h1.serviceGallery {
+        text-align: center;
+        text-emphasis: bold;
+        text-decoration: underline;
+        padding-top: 4%;
+        padding-bottom: 2%;
+    }
+
+    section#services {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1% 0;
+    }
+
+    div.service {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2% 0;
+    }
+    
+    div.service section.serviceGallery {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2% 0;
+        flex: 0 1 auto;
+    }
+
+    div.service img {
+        flex: 0 1 auto;
+        width: 15%;
+        margin: 0;
+        transition: flex 0.5s;
+    }
+
+    div.service section.serviceGallery img:hover {
+        flex: 4 1 auto;
+    }
 }
 
 /*Tablet/Phone Styles*/
