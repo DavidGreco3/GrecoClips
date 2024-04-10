@@ -24,26 +24,26 @@ header {
 
 
 /*Navigation*/
-nav.pageNav li {
+nav#pageNav li {
     flex: 1 0 25%;
     display: block;
     text-align: center;
     background-image: linear-gradient(to right, #010007, #2400f0, hsl(233, 100%, 5%));
 }
 
-nav.pageNav li:hover, nav.pageNav li:active {
+nav#pageNav li:hover, nav#pageNav li:active {
     flex: 1 0 25%;
     display: block;
     text-align: center;
     background-image: linear-gradient(to right, #010007, #d60000, hsl(233, 100%, 5%));
 }
 
-nav.pageNav a {
+nav#pageNav a {
     color: #ffffff;
     text-decoration: none;
 }
 
-nav.pageNav a:hover, nav.pageNav a:active{
+nav#pageNav a:hover, nav#pageNav a:active{
     color: #ffffff;
     text-decoration: none;
 }
