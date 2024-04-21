@@ -102,6 +102,26 @@ div.service section.serviceGallery:hover {
 
 }
 
+div#mobile-button {
+    background-color: transparent;
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    h1#serviceGallery {
+        font-size: 2.7em;
+    }
+    h3#fades {
+        font-size: 2em;
+    }
+    h3#tapers {
+        font-size: 2em;
+    }
+    h3#styles {
+        font-size: 2em;
+    }
+}
+
 
 /*Aside*/
 
@@ -142,6 +162,13 @@ body > main > footer {
 
 }
 
+@media screen and (max-width: 599px) {
+    body > main > footer {
+        box-shadow: none;
+    }
+    
+}
+
 footer a:link, footer a:visited {
     color: blue;
     text-decoration: none;
@@ -150,4 +177,14 @@ footer a:link, footer a:visited {
 footer a:hover, footer a:active {
     color: red;
     text-decoration: none;
+}
+
+/*Scroll animations*/
+.scroll-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.scroll-in.show {
+    opacity: 1;
 }

@@ -99,6 +99,10 @@
     div.homepageIntro aside h3 {
         padding-top: 8px;
     }
+
+    a#viewmore {
+        padding: 0 1%;
+    }
     
     div.homepageIntro section p {
         font-size: 1.6em;
@@ -211,6 +215,15 @@
         width: 70%;
     }
 
+    #pageNav {
+        transition: top 1s ease-in-out;
+    }
+
+    .mobile-nav-button {
+        display: none;
+    }
+    
+
 }
 
 /*Tablet/Phone Styles*/
@@ -219,7 +232,6 @@
     body {
         width: 97%;
         margin: 0 auto;
-        padding: 8px;
     }
     
 
@@ -254,11 +266,13 @@
     
     div.homepageIntro section {
         text-align: center;
+        padding: 5% 2%;
     }
 
     div.homepageIntro section h1 {
         display: inline-block;
         padding-top: 5px;
+        padding-bottom: 5%;
     }
 
     div.homepageIntro section img {
@@ -276,7 +290,6 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        box-shadow: 0px 2px 11px 10px rgba(27,27,27,0.99);
     }
 
     div.homepageIntro aside a#viewmore {
@@ -327,7 +340,7 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        padding: 1% 0;
+        padding: 3% 0;
         flex: 0 1 auto;
     }
 
@@ -347,11 +360,27 @@
     }
     
     section#services h3 {
-        font-size: 3em;
+        font-size: 2em;
+        padding-bottom: 3%;
     }
     
     section#services h1 {
-        font-size: 3em;
+        font-size: 2.5em;
         text-decoration: underline;
+        text-align: center;
+        padding: 2% 0;
+    }
+
+    .mobile-nav-button {
+        display: block;
+        height: 1.25em;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        margin-left: 3%;
+        border-radius: 20px;
+        width: 20%;
+        font-size: 1.5em;
+        background-image: linear-gradient(to right, #010007, #2400f0, hsl(233, 100%, 5%));
+        color: white;
     }
 }

@@ -17,7 +17,10 @@
 <body>
     <header>
         <a href="index.html"><img id="logo" src="pics/GrecoClipsLogo.png" alt="Greco Clips Logo"></a>
-        <nav id="pageNav">
+        <div id="mobile-button">
+            <button class="mobile-nav-button">&#8801;</button>
+        </div>
+        <nav id="pageNav" class="mobileNav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -31,19 +34,19 @@
 
         <section id="services">
             
-            <h1 class="serviceGallery">Service Gallery</h1>
+            <h1 id="serviceGallery" class="serviceGallery">Service Gallery</h1>
 
             <div class="service" id="fade">
 
-                <h3>Fades</h3>
+                <h3 id="fades">Fades</h3>
                 
                 <section class="serviceGallery" id="2">
-                    <div class="before">
+                    <div class="before scroll-in">
                         <img src="pics/Cut2_Before1.jpg" alt="Before pic of haircut 2 from back">
                         <img src="pics/Cut2_Before2.jpg" alt="Before pic of haircut 2 from back">
                         <img src="pics/Cut2_Before3.jpg" alt="Before pic of haircut 2 from back">
                     </div>
-                    <div class="after"> 
+                    <div class="after scroll-in"> 
                         <img src="pics/Cut2_After3.jpg" alt="After pic of haircut 2 from back">
                         <img src="pics/Cut2_After2.jpg" alt="After pic of haircut 2 from back">
                         <img src="pics/Cut2_After1.jpg" alt="After pic of haircut 2 from back">
@@ -51,12 +54,12 @@
             </section>
                 
                 <section class="serviceGallery" id="10">
-                    <div class="before">
+                    <div class="before scroll-in">
                         <img src="pics/Cut10_Before1.jpg" alt="Before pic of haircut 10 from side">
                         <img src="pics/Cut10_Before2.jpg" alt="Before pic of haircut 10 from back">
                         <img src="pics/Cut10_Before3.jpg" alt="Before pic of haircut 10 from side">
                     </div>
-                    <div class="after">
+                    <div class="after scroll-in">
                         <img src="pics/Cut10_After1.jpg" alt="After pic of haircut 10 from side">
                         <img src="pics/Cut10_After2.jpg" alt="After pic of haircut 10 from back">
                         <img src="pics/Cut10_After3.jpg" alt="After pic of haircut 10 from side">
@@ -64,12 +67,12 @@
             </section>
                 
                 <section class="serviceGallery" id="7">
-                    <div class="before">
+                    <div class="before scroll-in">
                         <img src="pics/Cut7_Before1.jpg" alt="Before pic of haircut 7 from side">
                         <img src="pics/Cut7_Before2.jpg" alt="Before pic of haircut 7 from side">
                         <img src="pics/Cut7_Before3.jpg" alt="Before pic of haircut 7 from back">
                     </div>
-                    <div class="after">
+                    <div class="after scroll-in">
                         <img src="pics/Cut7_After1.jpg" alt="After pic of haircut 7 from side">
                         <img src="pics/Cut7_After2.jpg" alt="After pic of haircut 7 from side">
                         <img src="pics/Cut7_After3.jpg" alt="After pic of haircut 7 from back">
@@ -79,14 +82,14 @@
             
             <div class="service" id="taper">
 
-                <h3>Tapers</h3>
+                <h3 id="tapers">Tapers</h3>
                 
                 <section class="serviceGallery" id="5">
-                    <div class="before">
+                    <div class="before scroll-in">
                         <img src="pics/Cut5_Before1.jpg" alt="Before pic of haircut 5 from side">
                         <img src="pics/Cut5_Before2.jpg" alt="Before pic of haircut 5 from side">
                     </div>
-                    <div class="after">
+                    <div class="after scroll-in">
                         <img src="pics/Cut5_After1.jpg" alt="After pic of haircut 5 from side">
                         <img src="pics/Cut5_After2.jpg" alt="After pic of haircut 5 from side">
                         <img src="pics/Cut5_After3.jpg" alt="After pic of haircut 5 from back">
@@ -95,12 +98,12 @@
                 </section>
 
                 <section class="serviceGallery" id="3">
-                    <div class="before">
+                    <div class="before scroll-in">
                         <img src="pics/Cut3_Before.jpg" alt="Before pic of haircut 3 from side">
                         <img src="pics/Cut3_Before2.jpg" alt="Before pic of haircut 3 from side">
                         <img src="pics/Cut3_Before3.jpg" alt="Before pic of haircut 3 from back">
                     </div>
-                    <div class="after">
+                    <div class="after scroll-in">
                         <img src="pics/Cut3_After2.jpg" alt="After pic of haircut 3 from back">
                         <img src="pics/Cut3_After1.jpg" alt="After pic of haircut 3 from side">
                         <img src="pics/Cut3_After3.jpg" alt="After pic of haircut 3 from side">
@@ -108,12 +111,12 @@
                 </section>
 
                 <section class="serviceGallery" id="8">
-                    <div class="before">
+                    <div class="before scroll-in">
                         <img src="pics/Cut8_Before1.jpg" alt="Before pic of haircut 8 from back">
                         <img src="pics/Cut8_Before2.jpg" alt="Before pic of haircut 8 from side">
                         <img src="pics/Cut8_Before3.jpg" alt="Before pic of haircut 8 from side">
                     </div>
-                    <div class="after">
+                    <div class="after scroll-in">
                         <img src="pics/Cut8_After1.jpg" alt="After pic of haircut 8 from back">
                         <img src="pics/Cut8_After2.jpg" alt="After pic of haircut 8 from side">
                         <img src="pics/Cut8_After3.jpg" alt="After pic of haircut 8 from side">
@@ -124,14 +127,14 @@
             
             <div class="service" id="styles">
 
-                <h3>Styles</h3>
+                <h3 id="styles">Styles</h3>
                 
                 <section class="serviceGallery" id="1">
-                    <div class="before">
+                    <div class="before scroll-in">
                         <img src="pics/Cut1_Before.jpg" alt="Before pic of haircut 1 from side">
                         <img src="pics/Cut1_Before2.jpg" alt="Before pic of haircut 1 from side">
                     </div>
-                    <div class="after">
+                    <div class="after scroll-in">
                         <img src="pics/Cut1_After2.jpg" alt="After pic of haircut 1 from side">
                         <img src="pics/Cut1_After.jpg" alt="After pic of haircut 1 from side">
                         <img src="pics/Cut1_After3.jpg" alt="After pic of haircut 1 from back">
@@ -140,12 +143,12 @@
                 </section>
 
                 <section class="serviceGallery" id="4">
-                    <div class="before">
+                    <div class="before scroll-in">
                         <img src="pics/Cut4_Before.jpg" alt="Before pic of haircut 4 from side">
                         <img src="pics/Cut4_Before2.jpg" alt="Before pic of haircut 4 from back">
                         <img src="pics/Cut4_Before3.jpg" alt="Before pic of haircut 4 from side">
                     </div>
-                    <div class="after">
+                    <div class="after scroll-in">
                         <img src="pics/Cut4_After1.jpg" alt="After pic of haircut 4 from side">
                         <img src="pics/Cut4_After2.jpg" alt="After pic of haircut 4 from back">
                         <img src="pics/Cut4_After3.jpg" alt="After pic of haircut 4 from side with blowdry">
@@ -153,12 +156,12 @@
                 </section>
 
                 <section class="serviceGallery" id="9">
-                    <div class="before">
+                    <div class="before scroll-in">
                         <img src="pics/Cut9_Before1.jpg" alt="Before pic of haircut 9 from side">
                         <img src="pics/Cut9_Before2.jpg" alt="Before pic of haircut 9 from back">
                         <img src="pics/Cut9_Before3.jpg" alt="Before pic of haircut 9 from side">
                     </div>
-                    <div class="after">
+                    <div class="after scroll-in">
                         <img src="pics/Cut9_After1.jpg" alt="After pic of haircut 9 from side">
                         <img src="pics/Cut9_After2.jpg" alt="After pic of haircut 9 from back">
                         <img src="pics/Cut9_After3.jpg" alt="After pic of haircut 9 from side">
@@ -170,7 +173,7 @@
         </section>
         
 
-        <footer>
+        <footer class="scroll-in">
             <p><a id="IGLink" href="https://www.instagram.com/grecoclips22/"><i class="fa fa-instagram" style="font-size:36px"></i> @grecoclips22</a></p>
             <p>Greco Clips &copy; 2024</p>
             <p><a id="phoneNumber" href="tel:+17162929112">📞(716) 292 9112</a></p>

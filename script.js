@@ -18,3 +18,32 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+window.onscroll = function() {
+    myFunction();
+    checkScroll();
+};
+
+function checkScroll() {
+    var scrollInElements = document.querySelectorAll('.scroll-in');
+    var windowHeight = window.innerHeight;
+
+    scrollInElements.forEach(function(element) {
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - windowHeight <= 0) {
+            element.classList.add('show');
+        }
+    });
+}
+
+var mobileNavButton = document.querySelector('.mobile-nav-button');
+var mobileNav = document.querySelector('.mobileNav');
+
+if (window.matchMedia("(max-width: 599px)").matches) {
+  mobileNav.style.display = 'none';
+} 
+
+mobileNavButton.addEventListener('click', function() {
+    mobileNav.style.display = mobileNav.style.display === 'none' ? 'block' : 'none';
+});
