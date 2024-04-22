@@ -192,8 +192,8 @@
     
     div.service img {
         flex: 0 1 auto;
-        width: 100%;
-        margin: 0;
+        width: 75%;
+        margin: 0 12.5%;
         transition: flex 0.5s;
     }
     
