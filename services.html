@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
     <link rel="stylesheet" href="layout.css" media="screen">
     <link rel="stylesheet" href="styles.css" media="screen">
+    <link rel="stylesheet" href="lightbox.css" media="screen">
     <link rel="stylesheet" href="print.css" media="print">
     
     <script src="script.js" defer></script>
@@ -42,12 +43,12 @@
                 
                 <section class="serviceGallery" id="2">
                     <div class="before scroll-in">
-                        <img src="pics/Cut2_Before1.jpg" alt="Before pic of haircut 2 from back">
+                        <img src="pics/Cut2_Before1.jpg" alt="Before pic of haircut 2 from back" onclick="openModal();currentSlide(1)" class="hover-shadow">
                         <img src="pics/Cut2_Before2.jpg" alt="Before pic of haircut 2 from back">
                         <img src="pics/Cut2_Before3.jpg" alt="Before pic of haircut 2 from back">
                     </div>
                     <div class="after scroll-in"> 
-                        <img src="pics/Cut2_After3.jpg" alt="After pic of haircut 2 from back">
+                        <img src="pics/Cut2_After3.jpg" alt="After pic of haircut 2 from back" onclick="openModal();currentSlide(2)" class="hover-shadow">
                         <img src="pics/Cut2_After2.jpg" alt="After pic of haircut 2 from back">
                         <img src="pics/Cut2_After1.jpg" alt="After pic of haircut 2 from back">
                    </div>
@@ -56,12 +57,12 @@
                 <section class="serviceGallery" id="10">
                     <div class="before scroll-in">
                         <img src="pics/Cut10_Before1.jpg" alt="Before pic of haircut 10 from side">
-                        <img src="pics/Cut10_Before2.jpg" alt="Before pic of haircut 10 from back">
+                        <img src="pics/Cut10_Before2.jpg" alt="Before pic of haircut 10 from back" onclick="openModal();currentSlide(3)" class="hover-shadow">
                         <img src="pics/Cut10_Before3.jpg" alt="Before pic of haircut 10 from side">
                     </div>
                     <div class="after scroll-in">
                         <img src="pics/Cut10_After1.jpg" alt="After pic of haircut 10 from side">
-                        <img src="pics/Cut10_After2.jpg" alt="After pic of haircut 10 from back">
+                        <img src="pics/Cut10_After2.jpg" alt="After pic of haircut 10 from back" onclick="openModal();currentSlide(4)" class="hover-shadow">
                         <img src="pics/Cut10_After3.jpg" alt="After pic of haircut 10 from side">
                 </div> 
             </section>
@@ -69,12 +70,12 @@
                 <section class="serviceGallery" id="7">
                     <div class="before scroll-in">
                         <img src="pics/Cut7_Before1.jpg" alt="Before pic of haircut 7 from side">
-                        <img src="pics/Cut7_Before2.jpg" alt="Before pic of haircut 7 from side">
+                        <img src="pics/Cut7_Before2.jpg" alt="Before pic of haircut 7 from side" onclick="openModal();currentSlide(5)" class="hover-shadow">
                         <img src="pics/Cut7_Before3.jpg" alt="Before pic of haircut 7 from back">
                     </div>
                     <div class="after scroll-in">
                         <img src="pics/Cut7_After1.jpg" alt="After pic of haircut 7 from side">
-                        <img src="pics/Cut7_After2.jpg" alt="After pic of haircut 7 from side">
+                        <img src="pics/Cut7_After2.jpg" alt="After pic of haircut 7 from side" onclick="openModal();currentSlide(6)" class="hover-shadow">
                         <img src="pics/Cut7_After3.jpg" alt="After pic of haircut 7 from back">
                     </div>
                 </section>
@@ -171,6 +172,76 @@
             </div>
 
         </section>
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="pics/Cut2_Before1.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="pics/Cut2_After3.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="pics/Cut10_Before2.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="pics/Cut10_After2.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="pics/Cut7_Before2.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="pics/Cut7_After2.jpg" style="width:100%">
+              </div>
+          
+              <!-- Next/previous controls -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+              <!-- Caption text -->
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+          
+              <!-- Thumbnail image controls -->
+              <div class="column">
+                <img class="demo" src="pics/Cut2_Before1.jpg" onclick="currentSlide(1)" alt="Fade">
+              </div>
+          
+              <div class="column">
+                <img class="demo" src="pics/Cut2_After3.jpg" onclick="currentSlide(2)" alt="Fade">
+              </div>
+          
+              <div class="column">
+                <img class="demo" src="pics/Cut10_Before2.jpg" onclick="currentSlide(3)" alt="Fade">
+              </div>
+          
+              <div class="column">
+                <img class="demo" src="pics/Cut10_After2.jpg" onclick="currentSlide(4)" alt="Fade">
+              </div>
+              
+              <div class="column">
+                <img class="demo" src="pics/Cut7_Before2.jpg" onclick="currentSlide(5)" alt="Fade">
+              </div>
+              
+              <div class="column">
+                <img class="demo" src="pics/Cut7_After2.jpg" onclick="currentSlide(6)" alt="Fade">
+              </div>
+            </div>   
+          </div>
         
 
         <footer class="scroll-in">

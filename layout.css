@@ -185,6 +185,7 @@
         justify-content: space-around;
         align-items: center;
         padding: 2% 0;
+        width: 100%;
     }
     
     div.service section.serviceGallery {
@@ -194,6 +195,7 @@
         align-items: center;
         padding: 1% 0;
         flex: 0 1 auto;
+        width: 100%;
     }
     
     div.service img {
