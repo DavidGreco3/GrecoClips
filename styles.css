@@ -120,6 +120,11 @@ div#mobile-button {
     h3#styles {
         font-size: 2em;
     }
+
+    div#contact {
+        background-image: linear-gradient(to right, #010007, #2400f0, hsl(233, 100%, 5%));
+        color: white;
+    }
 }
 
 
@@ -157,7 +162,7 @@ aside#actionPics {
 body > main > footer {
     background-color: #d9d9d9;
     color: #000000;
-    border: 3px solid rgb(27, 27, 27);
+    border: 5px solid rgb(27, 27, 27);
     box-shadow: -1px -1px 4px 1px rgba(0,0,0,0.75);    
 
 }

@@ -102,6 +102,7 @@
 
     div.homepageIntro aside h3 {
         padding-top: 8px;
+        padding-left: 2%;
     }
 
     a#viewmore {
@@ -123,7 +124,8 @@
     body > main > footer {
         width: 99%;
         margin: 0 auto;
-        padding: 5px;
+        padding: 1px;
+        padding-bottom: 5px;
         text-align: center;
         display: flex;
         flex-direction: row;
@@ -134,7 +136,7 @@
 
     body > main > footer p {
         flex: 1 0 33%;
-        margin: 5px;
+        margin: 5px 0;
     }
     
     section#meetHunky{
@@ -231,6 +233,124 @@
         display: none;
     }
     
+    div#contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    div#call, div#instagram {
+        flex: 1 0 25%;
+        text-align: center;
+    }
+
+    div#contactForm {
+        flex: 1 0 50%;
+        text-align: center;
+    }
+
+    #call h2{
+        padding: 20% 0 5% 0;
+    }
+
+    #call p {
+        padding: 10% 0 20% 0;
+        font-size: 1.5em;
+    }
+
+    #call a:link, #call a:visited {
+        color: white;
+        text-decoration: none;
+    }
+
+    #call a:hover, #call a:active {
+        color: red;
+        text-decoration: none;
+    }
+/* 
+    #instagram{
+        border-left: 2px solid white;
+    } */
+
+    #instagram h2{
+        padding: 20% 0 5% 0;
+    }
+
+    #instagram p {
+        padding: 10% 0 20% 0;
+        font-size: 1.2em;
+    }
+
+    #instagram a:link, #instagram a:visited {
+        color: white;
+        text-decoration: none;
+    }
+
+    #instagram a:hover, #instagram a:active {
+        color: red;
+        text-decoration: none;
+    }
+    
+    h1#contactTitle {
+        text-align: center;
+        padding: 5% 0;
+        background-color: rgb(49, 49, 49);
+        color: white;
+    }
+
+    #contactForm h2 {
+        text-align: center;
+        padding: 2% 0 5% 0;
+    }
+
+    #contactForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2% 0;
+        border-left: 2px solid white;
+    }
+
+    #contactForm label {
+        width: 40%;
+        padding: 2% 0;
+        display: inline-block;
+    }
+
+    #contactForm input[type="text"], #contactForm input[type="email"], #contactForm textarea {
+        width: 40%;
+        float: right;
+        margin-right: 10%;
+    }
+
+    #contactForm input[type="submit"] {
+        width: 81%;
+        float: right;
+        padding-top: 2%;
+        margin-top: 2%;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    input#phone {
+        width: 40%;
+        float: right;
+        margin-right: 10%;
+    }
+
+    textarea#message {
+        width: 80%;
+        margin-right: 10%;
+        margin-left: 10%;
+        resize: vertical;
+    }
+
+    hr {
+        display: none;
+    }
 
 }
 
@@ -388,6 +508,122 @@
         border-radius: 20px;
         width: 20%;
         font-size: 1.5em;
+        background-image: linear-gradient(to right, #010007, #2400f0, hsl(233, 100%, 5%));
+        color: white;
+    }
+
+    div#contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2% 0 0 0;
+        width: 100%;
+    }
+
+    div#call, div#instagram {
+        flex: 1 0 25%;
+        text-align: center;
+    }
+
+    div#contactForm {
+        flex: 1 0 50%;
+        text-align: center;
+    }
+
+    #call h2{
+        padding: 20% 0 5% 0;
+    }
+
+    #call p {
+        padding: 10% 0 20% 0;
+        font-size: 1.5em;
+    }
+
+    #call a:link, #call a:visited {
+        color: white;
+        text-decoration: none;
+    }
+
+    #call a:hover, #call a:active {
+        color: red;
+        text-decoration: none;
+    }
+
+    #instagram h2{
+        padding: 20% 0 5% 0;
+    }
+
+    #instagram p {
+        padding: 10% 0 20% 0;
+        font-size: 1.2em;
+    }
+
+    #instagram a:link, #instagram a:visited {
+        color: white;
+        text-decoration: none;
+    }
+
+    #instagram a:hover, #instagram a:active {
+        color: red;
+        text-decoration: none;
+    }
+    
+    h1#contactTitle {
+        text-align: center;
+        padding: 5% 0;
+        background-color: rgb(49, 49, 49);
+        color: white;
+    }
+
+    #contactForm h2 {
+        text-align: center;
+        padding: 2% 0 5% 0;
+    }
+
+    #contactForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2% 0;
+    }
+
+    #contactForm label {
+        width: 40%;
+        padding: 2% 0;
+        display: inline-block;
+    }
+
+    #contactForm input[type="text"], #contactForm input[type="email"], #contactForm textarea {
+        width: 40%;
+        float: right;
+        margin-right: 10%;
+    }
+
+    #contactForm input[type="submit"] {
+        width: 81%;
+        float: right;
+        padding-top: 2%;
+        margin-top: 2%;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    input#phone {
+        width: 40%;
+        float: right;
+        margin-right: 10%;
+    }
+
+    textarea#message {
+        width: 80%;
+        margin-right: 10%;
+        margin-left: 10%;
+        resize: vertical;
+    }
+
+    div#contact {
         background-image: linear-gradient(to right, #010007, #2400f0, hsl(233, 100%, 5%));
         color: white;
     }
