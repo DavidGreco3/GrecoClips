@@ -45,7 +45,7 @@
             <hr width="100%"/>
             <div id="contactForm" class="contactPage">
                 <h2>Fill Out The Form Below</h2>
-                <form method="post" action="send-email.php">
+                <form method="post" action="send-email.php" id="myForm">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
                     <label for="email">Email:</label>
@@ -57,7 +57,7 @@
                     style="height: 100px;"
                     placeholder="Please provide a reason for inquiry. If you would like a cut, include your available dates/times." 
                     required></textarea>
-                    <input type="submit" value="Submit">
+                    <input type="submit" name="submit" value="Submit" id="submit">
                 </form>
             </div>
         </div>

@@ -125,6 +125,10 @@ div#mobile-button {
         background-image: linear-gradient(to right, #010007, #2400f0, hsl(233, 100%, 5%));
         color: white;
     }
+
+    .thankYou a {
+        display: none;
+    }
 }
 
 
@@ -172,6 +176,18 @@ body > main > footer {
         box-shadow: none;
     }
     
+
+    .thankYou a {
+        padding-bottom: 5%;
+    }
+
+    .thankYou a:link, .thankYou a:visited {
+        color: white;
+    }
+
+    .thankYou a:hover, .thankYou a:active {
+        color: red;
+    }
 }
 
 footer a:link, footer a:visited {
@@ -193,3 +209,4 @@ footer a:hover, footer a:active {
 .scroll-in.show {
     opacity: 1;
 }
+

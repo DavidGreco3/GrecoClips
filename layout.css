@@ -327,12 +327,12 @@
     }
 
     #contactForm input[type="submit"] {
-        width: 81%;
+        width: 41%;
         float: right;
-        padding-top: 2%;
+        padding: 2% 0;
         margin-top: 2%;
         margin-right: 10%;
-        margin-left: 10%;
+        margin-left: 50%;
     }
 
     input#phone {
@@ -352,6 +352,19 @@
         display: none;
     }
 
+    div.thankYou {
+        padding: 5% 0;
+        margin: 0;
+    }
+
+    div.thankYou h1 {
+        padding: 5%;
+    }
+    
+    div.thankYou p{
+        padding: 5%;
+        font-size: 1.5em;
+    }
 }
 
 /*Tablet/Phone Styles*/
@@ -626,5 +639,20 @@
     div#contact {
         background-image: linear-gradient(to right, #010007, #2400f0, hsl(233, 100%, 5%));
         color: white;
+    }
+
+    div.thankYou {
+        padding: 5% 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    div.thankYou h1 {
+        padding: 5%;
+    }
+    
+    div.thankYou p{
+        padding: 5%;
+        font-size: 1.5em;
     }
 }
