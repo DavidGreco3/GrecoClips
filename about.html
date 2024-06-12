@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
     <link rel="stylesheet" href="layout.css" media="screen">
     <link rel="stylesheet" href="styles.css" media="screen">
+    <link rel="stylesheet" href="lightbox.css" media="screen">
     <link rel="stylesheet" href="print.css" media="print">
     
     <script src="script.js" defer></script>
@@ -36,7 +37,7 @@
 
             <section id="meetHunky">
                 <h1 id="title">Meet The Barber</h1>
-                <img id="Spencer" src="pics/Full_Hunky_Profile.jpg" alt="Spencer Greco">
+                <a href="#lightbox3"><img id="Spencer" src="pics/Full_Hunky_Profile.jpg" alt="Spencer Greco"></a>
             
                 <p>Spencer Greco is an 18 year old barber from Buffalo, NY. 
                     Getting his start at Kenmore West High School, Spencer began
@@ -65,11 +66,23 @@
 
             <aside id="actionPics" class="scroll-in">
                 <h3>Spencer in Action</h3>
-                <a href="pics/Full_Hunky_Action1.jpg"><img src="pics/Full_Hunky_Action1.jpg" alt="Spencer cutting hair from behind"></a>
-                <a href="pics/Full_Hunky_Action2.jpg"><img src="pics/Full_Hunky_Action2.jpg" alt="Spencer cutting hair from the front"></a>
+                <a href="#lightbox1"><img src="pics/Full_Hunky_Action1.jpg" alt="Spencer cutting hair from behind"></a>
+                <a href="#lightbox2"><img src="pics/Full_Hunky_Action2.jpg" alt="Spencer cutting hair from the front"></a>
                 <!-- <a href="Full_Hunky_Action3.jpg"><img src="Full_Hunky_Action3.jpg" alt="Spencer cutting hair from the side"></a> -->
             </aside>
         </div>
+
+        <a href="#" class="lightbox" id="lightbox1">
+            <div style="background-image: url('pics/Full_Hunky_Action1.jpg');"></div>
+        </a>
+
+        <a href="#" class="lightbox" id="lightbox2">
+            <div style="background-image: url('pics/Full_Hunky_Action2.jpg');"></div>
+        </a>
+        
+        <a href="#" class="lightbox" id="lightbox3">
+            <div style="background-image: url('pics/Full_Hunky_Profile.jpg');"></div>
+        </a>
 
         <footer class="scroll-in">
             <p><a id="IGLink" href="https://www.instagram.com/grecoclips22/"><i class="fa fa-instagram" style="font-size:36px"></i> @grecoclips22</a></p>

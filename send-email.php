@@ -37,7 +37,7 @@ if(isset($_POST['submit'])){
     $result = $mail->send();
 
 	if ($result) {
-		header('Location: thankYou.html');
+		header('Location: https://grecoclips.com/thankYou.html');
 	
 	}else{
 		echo '<script type="text/javascript">alert("Sorry! Message was not sent, Try again Later.");</script>';

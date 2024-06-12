@@ -87,9 +87,7 @@
     
     div.homepageIntro aside img {
         width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 5px;
+        margin: 5px 3%;
     }
     
     div.homepageIntro aside#photoGallery h3 {

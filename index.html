@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
     <link rel="stylesheet" href="layout.css" media="screen">
     <link rel="stylesheet" href="styles.css" media="screen">
+    <link rel="stylesheet" href="lightbox.css" media="screen">
     <link rel="stylesheet" href="print.css" media="print">
 
     <script src="script.js" defer></script>
@@ -49,12 +50,24 @@
             
             <aside id="photoGallery" class="scroll-in">
                 <h3>Featured Cuts</h3>
-                <a href="pics/Full_Cut3_After.png"><img src="pics/Cut3_After.jpg" alt="After pic of haircut"></a>
-                <a href="pics/Full_Cut2_After.png"><img src="pics/Cut2_After.jpg" alt="After pic of haircut"></a>
-                <a href="pics/Full_Cut6_After.png"><img src="pics/Cut6_After.png" alt="After pic of haircut"></a>
+                <a href="#lightbox1"><img src="pics/Cut3_After.jpg" alt="After pic of haircut"></a>
+                <a href="#lightbox2"><img src="pics/Cut2_After.jpg" alt="After pic of haircut"></a>
+                <a href="#lightbox3"><img src="pics/Cut6_After.png" alt="After pic of haircut"></a>
                 <a id="viewmore" href="services.html">View More Cuts →</a> <!-- Link to services page for more cuts -->
             </aside>
         </div>
+
+        <a href="#" class="lightbox" id="lightbox1">
+            <div style="background-image: url('pics/Full_Cut3_After.png');"></div>
+          </a>
+
+          <a href="#" class="lightbox" id="lightbox2">
+            <div style="background-image: url('pics/Full_Cut2_After.png');"></div>
+          </a>
+
+          <a href="#" class="lightbox" id="lightbox3">
+            <div style="background-image: url('pics/Full_Cut6_After.png');"></div>
+          </a>
 
         <footer class="scroll-in">
             <p><a id="IGLink" href="https://www.instagram.com/grecoclips22/"><i class="fa fa-instagram" style="font-size:36px"></i> @grecoclips22</a></p>
